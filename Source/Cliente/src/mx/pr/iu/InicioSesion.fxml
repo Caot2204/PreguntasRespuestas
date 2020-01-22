@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="228.0" prefWidth="281.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="mx.pr.iu.controller.InicioSesionController">
+   <children>
+      <PasswordField layoutX="22.0" layoutY="106.0" prefHeight="37.0" prefWidth="238.0" promptText="%key.contrasenia" />
+      <TextField layoutX="20.0" layoutY="40.0" prefHeight="37.0" prefWidth="238.0" promptText="%key.usuario" />
+      <Button layoutX="71.0" layoutY="166.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="137.0" text="%key.iniciarSesion" />
+   </children>
+</AnchorPane>

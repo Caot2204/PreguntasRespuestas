@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox prefWidth="1018.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.pr.iu.controller.MedalleroController">
+   <children>
+      <BorderPane prefHeight="73.0" prefWidth="998.0">
+         <bottom>
+            <Label text="%key.resultadoFinal" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </bottom>
+         <left>
+            <Button mnemonicParsing="false" text="%key.finalizarJuego" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+         <right>
+            <Button mnemonicParsing="false" text="%key.chat" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </BorderPane>
+      <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="135.0" layoutX="51.0" layoutY="330.0" stroke="BLACK" strokeType="INSIDE" width="291.0" />
+            <Label layoutX="178.0" layoutY="272.0" text="3°">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="341.0" text="Nombre del jugador">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="366.0" text="0000">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="332.0" layoutX="364.0" layoutY="133.0" stroke="BLACK" strokeType="INSIDE" width="291.0" />
+            <Label layoutX="492.0" layoutY="168.0" text="0000">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="438.0" layoutY="143.0" text="Nombre del jugador">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="491.0" layoutY="74.0" text="1°">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="221.0" layoutX="678.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="291.0" />
+            <Label layoutX="805.0" layoutY="185.0" text="2°">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="752.0" layoutY="254.0" text="Nombre del jugador">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="806.0" layoutY="279.0" text="0000">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

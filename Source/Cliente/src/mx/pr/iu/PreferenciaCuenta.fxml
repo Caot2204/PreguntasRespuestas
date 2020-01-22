@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="365.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="mx.pr.iu.controller.PreferenciaCuentaController">
+   <children>
+      <VBox layoutX="23.0" layoutY="269.0" prefHeight="150.0" prefWidth="319.0" spacing="30.0">
+         <children>
+            <TextField fx:id="textFieldNombreUsario" prefHeight="25.0" prefWidth="269.0" promptText="%key.nombreUsuario" />
+            <TextField fx:id="textFieldCorreo" promptText="%key.correoElectronico" />
+            <TextField fx:id="textFieldContrasenia" promptText="%key.contrasenia" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="23.0" layoutY="64.0" prefHeight="188.0" prefWidth="319.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" text="%key.subirFoto" />
+         </children>
+      </VBox>
+      <Label layoutX="23.0" layoutY="14.0" text="%key.datosCuenta">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="23.0" layoutY="41.0" prefHeight="0.0" prefWidth="319.0" />
+      <Separator layoutX="23.0" layoutY="454.0" prefHeight="0.0" prefWidth="319.0" />
+      <Label layoutX="23.0" layoutY="427.0" text="%key.idiomaJuego">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxIdioma" layoutX="80.0" layoutY="479.0" prefHeight="25.0" prefWidth="206.0" />
+      <BorderPane layoutY="523.0" prefHeight="43.0" prefWidth="365.0">
+         <left>
+            <Button mnemonicParsing="false" text="%key.cancelar" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Button mnemonicParsing="false" text="%key.guardar" BorderPane.alignment="CENTER" />
+         </right>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

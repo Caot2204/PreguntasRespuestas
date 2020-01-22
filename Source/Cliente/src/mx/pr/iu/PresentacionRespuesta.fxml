@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.pr.iu.controller.PresentacionRespuestaController">
+   <children>
+      <BorderPane prefHeight="321.0" prefWidth="1018.0" VBox.vgrow="ALWAYS">
+         <top>
+            <Label alignment="CENTER" prefWidth="1018.0" text="Pregunta" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </top>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <center>
+            <ImageView fitHeight="217.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="80.0" />
+               </BorderPane.margin>
+               <image>
+                  <Image url="@recursos/no-image-icon.png" />
+               </image>
+            </ImageView>
+         </center>
+         <right>
+            <Label text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets right="50.0" />
+               </BorderPane.margin>
+            </Label>
+         </right></BorderPane>
+      <GridPane gridLinesVisible="true" prefHeight="256.0" prefWidth="1018.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <left>
+                  <Label text="Respuesta B" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </left>
+               <right>
+                  <ImageView fitHeight="117.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@recursos/no-image-icon.png" />
+                     </image>
+                  </ImageView>
+               </right>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <left>
+                  <Label text="Respuesta A" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </left>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <right>
+                  <ImageView fitHeight="117.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@recursos/no-image-icon.png" />
+                     </image>
+                  </ImageView>
+               </right>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <left>
+                  <Label text="Respuesta C" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </left>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <right>
+                  <ImageView fitHeight="117.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@recursos/no-image-icon.png" />
+                     </image>
+                  </ImageView>
+               </right>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <left>
+                  <Label text="Respuesta D" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </left>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+               <right>
+                  <ImageView fitHeight="117.0" fitWidth="182.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@recursos/no-image-icon.png" />
+                     </image>
+                  </ImageView>
+               </right>
+            </BorderPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="1018.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.pr.iu.controller.PresentacionMarcadorController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <BorderPane prefHeight="73.0" prefWidth="998.0">
+         <left>
+            <Button mnemonicParsing="false" text="%key.siguiente" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+         <right>
+            <Button mnemonicParsing="false" text="%key.chat" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
+         <bottom>
+            <Label text="%key.marcadorJugadores" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </bottom>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+      </BorderPane>
+      <ListView prefHeight="433.0" prefWidth="792.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets left="230.0" right="200.0" />
+         </VBox.margin>
+      </ListView>
+   </children>
+</VBox>
