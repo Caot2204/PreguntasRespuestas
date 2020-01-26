@@ -14,25 +14,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package mx.pr.iu.controller;
-
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+package mx.pr;
 
 /**
- * FXML Controller class
  *
  * @author Carlos Onorio
  */
-public class JugadorConectadoController implements Initializable {
+public class Servidor {
 
     /**
-     * Initializes the controller class.
+     * @param args the command line arguments
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
 }
