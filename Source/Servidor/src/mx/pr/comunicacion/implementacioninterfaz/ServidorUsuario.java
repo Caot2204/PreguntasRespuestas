@@ -16,10 +16,61 @@
  */
 package mx.pr.comunicacion.implementacioninterfaz;
 
+import java.rmi.RemoteException;
+import mx.pr.almacenamiento.encriptacion.Encriptador;
+import mx.pr.comunicacion.interfacesrmi.UsuarioInterfaceRMI;
+import mx.pr.comunicacion.objetoscliente.UsuarioCliente;
+
 /**
+ * Permite a los usuarios almacenar y actualizar su información dentro del
+ * sistema, así como iniciar sesión en él
  *
+ * @version 1.0 01 02 2020
  * @author Carlos Onorio
  */
-public class ServidorUsuario {
+public class ServidorUsuario implements UsuarioInterfaceRMI {
     
+    private final String CLAVE_AES_USUARIO = "gaop";
+    private final Encriptador encriptador;
+    private ServidorUsuario servidor;
+    
+    /**
+     * 
+     * @return instancia del servidor para los usuarios
+     */
+    public ServidorUsuario obtenerInstancia() {
+        if (servidor == null) {
+            this.servidor = new ServidorUsuario();
+        }
+        return servidor;
+    }
+    
+    private ServidorUsuario() {
+        this.encriptador = Encriptador.obtenerInstancia(CLAVE_AES_USUARIO);
+    }
+
+    @Override
+    public boolean registrarUsuario(UsuarioCliente usuario) throws RemoteException {
+        boolean guardadoCorrecto = false;
+        
+        
+        
+        return guardadoCorrecto;
+    }
+
+    @Override
+    public boolean actualizarUsuario(UsuarioCliente usuario) throws RemoteException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean iniciarSesion(String correo, String contrasenia) throws RemoteException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean cerrarSesion(String correo) throws RemoteException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

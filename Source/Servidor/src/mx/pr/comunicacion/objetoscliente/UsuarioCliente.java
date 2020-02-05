@@ -16,10 +16,52 @@
  */
 package mx.pr.comunicacion.objetoscliente;
 
+import java.io.File;
+
 /**
+ * Representa a un usuario del juego Q&A, el cuál no muestra ninguna estructura
+ * interna del servidor
  *
+ * @version 1.0 04 02 2020
  * @author Carlos Onorio
  */
 public class UsuarioCliente {
-    
+
+    private String nombreUsuario;
+    private String correo;
+    private String contrasenia;
+    private File fotoPerfil;
+
+    public String getNombreUsuario() {
+        return nombreUsuario;
+    }
+
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
+    }
+
+    public File getFotoPerfil() {
+        return fotoPerfil;
+    }
+
+    public void setFotoPerfil(File fotoPerfil) {
+        this.fotoPerfil = fotoPerfil;
+    }
+
 }
